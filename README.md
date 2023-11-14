@@ -45,6 +45,7 @@ impl Me {
             "bash",
             "go",
             "rust",
+            "terraform",
         ]
         .iter()
         .map(|&f| f.to_string())
