@@ -1,0 +1,59 @@
+# quickly navigates to upper directory
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+alias .......='cd ../../../../../..'
+alias ........='cd ../../../../../../..'
+alias .........='cd ../../../../../../../..'
+alias ..........='cd ../../../../../../../../..'
+alias ...........='cd ../../../../../../../../../..'
+alias ............='cd ../../../../../../../../../../..'
+alias .............='cd ../../../../../../../../../../../..'
+
+alias grep='grep --color'
+alias l='less'
+alias less='less -R'
+alias ll='ls -al'
+alias ls='ls -Gh'
+alias tf=terraform
+alias tg=terragrunt
+alias tga='tg apply'
+alias genpass='tr -dc "A-Za-z0-9" < /dev/urandom | head -c30; echo'
+alias vscode=code
+alias yqcl='yq -C | less'
+
+function unziptofolder(){
+  unzip "$1" -d "${1%%.zip}"
+}
+alias unziptofolder=unziptofolder
+
+# https://github.com/nvbn/thefuck
+alias f='fuck'
+alias fy='f --yeah'
+
+# git related
+alias gcm='git commit -m'
+alias gcmn='git commit --no-verify -m'
+alias gco='git checkout'
+alias gethead='git log -n1 --format="%h"'
+alias gettag='git tag -l | sort -V'
+alias gpl='git pull'
+alias gps='git push'
+
+# docker / kubernetes related
+alias dockercontainerip='docker inspect -f "{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}"'
+alias htls='helm template . | yq -C | less -R'
+alias k='kubectl'
+alias kctx='kubectx'
+alias kgn='k get node'
+alias kgp='k get pod'
+alias kgs='k get service'
+alias kns='kubens'
+alias konfig='kubectl konfig'
+alias neat='k neat'
+alias wkgn='watch -n 1 kubectl get node'
+alias wkgp='watch -n 1 kubectl get pod'
+
+
