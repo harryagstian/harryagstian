@@ -55,5 +55,3 @@ alias konfig='kubectl konfig'
 alias neat='k neat'
 alias wkgn='watch -n 1 kubectl get node'
 alias wkgp='watch -n 1 kubectl get pod'
-
-

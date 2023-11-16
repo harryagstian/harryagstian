@@ -3,17 +3,11 @@
 I'm Harry, a DevOps Engineer. Welcome to my Github profile!
 
 ```rust
-struct Me {
-    name: String,
-    location: String,
-    favourite_food: String,
-}
-
 impl Me {
     fn new() -> Self {
         Me {
             name: String::from("Harry"),
-            location: String::from("Indonesia"),
+            location: String::from("🇮🇩"),
             favourite_food: String::from("🍣"),
         }
     }
@@ -29,10 +23,7 @@ impl Me {
             "go",
             "programming puzzles",
             "factorio-like games",
-        ]
-        .iter()
-        .map(|&f| f.to_string())
-        .collect()
+        ].iter().map(|&f| f.to_string()).collect()
     }
 
     fn get_languages() -> Vec<String> {
@@ -46,20 +37,14 @@ impl Me {
             "go",
             "rust",
             "terraform",
-        ]
-        .iter()
-        .map(|&f| f.to_string())
-        .collect()
+        ].iter().map(|&f| f.to_string()).collect()
     }
 
     fn get_goals() -> Vec<String> {
         vec![
-          "learn rust",
-          "contribute to open source community",
-          ]
-            .iter()
-            .map(|&f| f.to_string())
-            .collect()
+            "learn rust",
+            "contribute to open source community",
+        ].iter().map(|&f| f.to_string()).collect()
     }
 }
 ```
