@@ -6,45 +6,47 @@ I'm Harry, a DevOps Engineer. Welcome to my Github profile!
 impl Me {
     fn new() -> Self {
         Me {
-            name: String::from("Harry"),
-            location: String::from("🇮🇩"),
-            favourite_food: String::from("🍣"),
+            name: "Harry",
+            location: "🇮🇩",
+            favourite_food: "🍣",
         }
     }
 
-    fn get_interests() -> Vec<String> {
+    fn get_interests() -> Vec<&'static str> {
         vec![
             "devops",
             "automation",
             "infrastructure",
+            "SRE",
             "kubernetes",
             "linux",
             "rust",
             "go",
             "programming puzzles",
             "factorio-like games",
-        ].iter().map(|&f| f.to_string()).collect()
+            "noita",
+        ]
     }
 
-    fn get_languages() -> Vec<String> {
+    fn get_languages() -> Vec<&'static str> {
         vec![
             "english",
             "bahasa indonesia",
             "javascript",
-            "php",
-            "python",
-            "bash",
-            "go",
             "rust",
+            "bash",
+            "python",
+            "go",
             "terraform",
-        ].iter().map(|&f| f.to_string()).collect()
+            "php",
+        ]
     }
 
-    fn get_goals() -> Vec<String> {
+    fn get_goals() -> Vec<&'static str> {
         vec![
             "learn rust",
             "contribute to open source community",
-        ].iter().map(|&f| f.to_string()).collect()
+        ]
     }
 }
 ```
